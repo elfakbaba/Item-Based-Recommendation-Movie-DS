@@ -18,8 +18,8 @@ pd.set_option('display.width', 1000)
 # pd.set_option('display.expand_frame_repr', False)
 # pd.set_option('display.float_format', lambda x: '%.5f' % x)
 
-movie = pd.read_csv('datasets/movie_lens_dataset/movie.csv')
-rating = pd.read_csv('datasets/movie_lens_dataset/rating.csv')
+movie = pd.read_csv('pythonprojects/movie_lens_dataset/movie.csv')
+rating = pd.read_csv('pythonprojects/movie_lens_dataset/rating.csv')
 
 df = pd.merge(movie, rating, how='left', on='movieId')
 
